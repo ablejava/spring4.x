@@ -14,6 +14,12 @@ public class Test extends Base<String> {
 //		ls.add("d");
 		List<Object> lo = new ArrayList<Object>();	
 		List<String> ls = new ArrayList<String>();
-//		lo = ls;//<---此外语法编译不过	
+//		lo = ls;//<---此外语法编译不过
+		System.out.println(0.666*5); // 3.33
+		System.out.println(2/3); // ==0
+		System.out.println(2d/3); // 0.666666666666
+		System.out.println((2*5)/3); // 3
+		System.out.println((2*5)/3d); // 3.3333333333
+
 	}
 }
