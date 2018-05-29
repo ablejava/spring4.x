@@ -6,8 +6,8 @@
          http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context-4.0.xsd">
-   	<context:property-placeholder
-		 location="classpath:com/smart/placeholder/jdbc.properties"/>
+   	<!-- jdbc.prperties文件中uesrname 和系统中变量username重复，会优先加载jvm的变量值，加 system-properties-mode="FALLBACK" 当文件不存在时覆盖-->
+	<context:property-placeholder location="classpath:com/smart/placeholder/jdbc.properties" system-properties-mode="FALLBACK"/>
 		 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close" 
