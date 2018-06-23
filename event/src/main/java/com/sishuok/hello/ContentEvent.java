@@ -9,11 +9,13 @@ package com.sishuok.hello;
 import org.springframework.context.ApplicationEvent;
 
 /**
- * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:09
- * <p>Version: 1.0
+ * 定义事件源
  */
 public class ContentEvent extends ApplicationEvent {
+    /**
+     * 发送的内容通过构造函数传入，然后通过getSource()获取
+     * @param content
+     */
     public ContentEvent(final String content) {
         super(content);
     }

@@ -8,7 +8,8 @@ import org.springframework.stereotype.Component;
  * Created by Administrator on 2017/12/5.
  */
 @Component
-public class SpringContextRefrreshedEventListener implements ApplicationListener<ContextRefreshedEvent> {
+public class SpringContextRefreshedEventListener implements ApplicationListener<ContextRefreshedEvent> {
+
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
         if (contextRefreshedEvent.getApplicationContext().getParent() == null) {

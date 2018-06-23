@@ -11,11 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-/**
- * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:43
- * <p>Version: 1.0
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:spring-config-register.xml"})
 public class RegisterServiceIT {

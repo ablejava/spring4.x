@@ -7,11 +7,6 @@ package com.sishuok.register;
 
 import org.springframework.context.ApplicationEvent;
 
-/**
- * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:36
- * <p>Version: 1.0
- */
 public class RegisterEvent extends ApplicationEvent {
 
     public RegisterEvent(User user) {

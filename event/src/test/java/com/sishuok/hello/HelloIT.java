@@ -12,11 +12,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-/**
- * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:06
- * <p>Version: 1.0
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:spring-config-hello.xml"})
 public class HelloIT {
