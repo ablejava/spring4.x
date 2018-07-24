@@ -49,11 +49,14 @@ public class SpringOxmSampleTest  extends AbstractTestNGSpringContextTests {
 		LoginLog log1 = new LoginLog();
 		log1.setIp("192.168.1.91");
 		log1.setLoginDate(new Date());
+
 		LoginLog log2 = new LoginLog();
 		log2.setIp("192.168.1.92");
 		log2.setLoginDate(new Date());
+
 		u = new User();
 		u.setUserName("spring-oxm");
+		u.setPassword("123");
 		u.addLoginLog(log1);
 		u.addLoginLog(log2);
 		
@@ -62,8 +65,8 @@ public class SpringOxmSampleTest  extends AbstractTestNGSpringContextTests {
 	@Test
 	public void marshaller()throws Exception {
 		Assert.assertNotNull(xstreamMarshaller);
-		Assert.assertNotNull(jaxb2Marshaller);
-		Assert.assertNotNull(castorMarshaller);
+		/*Assert.assertNotNull(jaxb2Marshaller);
+		Assert.assertNotNull(castorMarshaller);*/
 		//Assert.assertNotNull(jibxMarshaller);
 
 		FileOutputStream os = null;

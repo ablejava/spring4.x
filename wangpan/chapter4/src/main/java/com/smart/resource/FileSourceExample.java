@@ -11,6 +11,8 @@ import org.springframework.core.io.*;
 public class FileSourceExample {
 	
 	public static void main(String[] args) {
+
+		// 3.ClassPathResource
 		try {
 			String filePath = "D:/masterSpring/code/chapter4/src/main/resources/conf/file1.txt";
 			WritableResource res1 = new PathResource(filePath);
