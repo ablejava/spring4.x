@@ -14,7 +14,7 @@ public class FileSourceExample {
 
 		// 3.ClassPathResource
 		try {
-			String filePath = "D:/masterSpring/code/chapter4/src/main/resources/conf/file1.txt";
+			String filePath = "D:\\zhihuishu\\spring4.x\\wangpan\\chapter4\\src\\main\\resources\\conf\\file1.txt";
 			WritableResource res1 = new PathResource(filePath);
 			Resource res2 = new ClassPathResource("conf/file1.txt");
 

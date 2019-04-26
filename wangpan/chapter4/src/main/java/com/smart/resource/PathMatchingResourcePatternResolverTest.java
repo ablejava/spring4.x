@@ -18,6 +18,8 @@ public class PathMatchingResourcePatternResolverTest {
 
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         Resource resource = resolver.getResource("log4j.properties");
+        // 读取classpath下所有配置文件，包括jar包中的
+        // Resource resource = resolver.getResource("classpath*:conf/*.properties");
         InputStream inputStream = resource.getInputStream();
         Properties poolProps = new Properties();
         poolProps.load(inputStream);
