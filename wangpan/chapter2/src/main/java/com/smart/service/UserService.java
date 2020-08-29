@@ -10,6 +10,8 @@ import com.smart.domain.LoginLog;
 import com.smart.domain.User;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 @Service
 public class UserService {
 	private UserDao userDao;
@@ -27,6 +29,7 @@ public class UserService {
 
 	@Transactional
     public void loginSuccess(User user) {
+		AtomicInteger
 		user.setCredits( 5 + user.getCredits());
 		LoginLog loginLog = new LoginLog();
 		loginLog.setUserId(user.getUserId());
